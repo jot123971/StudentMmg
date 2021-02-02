@@ -19,18 +19,34 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <partial name="_LoginPartial" />
                     <ul class="navbar-nav flex-grow-1">
+                        <!--[if IE 9]>
+    .... it display the home page with student management detail ....
+    <![endif]-->
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
+                        <!--[if IE 9]>
+    ....this function shows the student detail with studentname, studentDOB,address options ....
+    <![endif]-->
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Students" asp-action="Index">Student</a>
                         </li>
+                        <!--[if IE 9]>
+    ....this function shows the student courses detail from startdate to enddate....
+     <![endif]-->
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Courses" asp-action="Index">Course</a>
                         </li>
+                        <!--[if IE 9]>
+    ....this showa the enrolments of the student and courses  ....
+    <![endif]-->
+
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Enrols" asp-action="Index">Enrol</a>
                         </li>
+                        <!--[if IE 9]>
+    .... it display the privacy page  ....
+    <![endif]-->
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
