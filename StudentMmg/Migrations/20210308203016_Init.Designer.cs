@@ -10,8 +10,8 @@ using StudentMmg.Data;
 namespace StudentMmg.Migrations
 {
     [DbContext(typeof(StudentMmgContext))]
-    [Migration("20210118011202_initialCreate")]
-    partial class initialCreate
+    [Migration("20210308203016_Init")]
+    partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
